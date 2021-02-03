@@ -1,0 +1,22 @@
+{
+  "name": "minijuego-ciudades",
+  "version": "1.0.0",
+  "description": "Jueguito",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KvGM/minijuego-ciudades.git"
+  },
+  "author": "@KvGM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KvGM/minijuego-ciudades/issues"
+  },
+  "homepage": "https://github.com/KvGM/minijuego-ciudades#readme",
+  "devDependencies": {
+    "eslint": "^7.18.0"
+  }
+}

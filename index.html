@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="./css/general.css">
+  <link rel="stylesheet" href="./css/juego.css">
+  <link rel="stylesheet" href="./css/mapa.css">
+  <link rel="stylesheet" href="./css/grafica.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <title>Ciudades y Países</title>
+</head>
+
+<body>
+  <header>
+    <h1>Ciudades y Países</h1>
+  </header>
+  <main>
+    <section id="juego">
+      <div class="empezarArea">
+        <button type="button">Nueva Partida</button>
+        <p>Tiempo: <span id="segundos">0</span>s</p>
+      </div>
+      <div class="ciudadesArea"></div>
+      <div class="paisesArea"></div>
+    </section>
+    <section id="zonaMapa">
+      <div id="mapa"></div>
+    </section>
+    <section id="graficas">
+      <div class="chartLine">
+
+      </div>
+      <div class="chartCircle">
+
+      </div>
+    </section>
+  </main>
+
+  <template>
+    <div class="ciudad draggable">
+      <h3></h3>
+    </div>
+  </template>
+
+  <template>
+    <div class="pais">
+      <h4></h4>
+      <div class="droppable contenedorDrop"></div>
+    </div>
+  </template>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

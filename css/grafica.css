@@ -1,0 +1,7 @@
+#graficas {
+  grid-area: graf;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border: 1px solid black;
+  height: 450px;
+}/*# sourceMappingURL=grafica.css.map */

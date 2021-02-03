@@ -1,0 +1,8 @@
+#zonaMapa {
+  grid-area: mapa;
+  border: 1px solid black;
+}
+
+#mapa {
+  height: 100%;
+}/*# sourceMappingURL=mapa.css.map */

@@ -1,0 +1,73 @@
+$border: 2px solid rgb(109, 211, 245);
+$radius: 13px;
+$color: rgb(231,231,231);
+$color-letras: rgb(128, 180, 201);
+
+button{
+    border: $border;
+    border-radius: $radius;
+    background-color: white;
+}
+
+button:hover{
+    background-color: $color;
+}
+
+button:active{
+    background-color: grey;
+}
+
+@mixin cajas-juego {
+    padding: 3px;
+    border: $border;
+    border-radius: $radius;
+    background-color: $color;
+}
+
+h3,h4{ @include cajas-juego()}
+
+main{
+    #juego{
+        background-color: white;
+        grid-area: juego;
+        min-height: 400px;
+        border: 1px solid black;
+    }
+}
+
+.pais, .ciudad{
+    color: $color-letras;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.correcto{
+    background-color: lightgreen;
+}
+
+.draggable {
+    cursor: pointer;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "juego juego juego mapa mapa"
+                         "graf graf graf graf graf";
+}
+.empezarArea {
+    max-height: 50px;
+}
+
+.ciudadesArea, .paisesArea{
+    display: flex;
+    margin-left: 5px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedorDrop {
+    min-width: 30px;
+    min-height: 30px;
+    border: 1px black solid;
+  }

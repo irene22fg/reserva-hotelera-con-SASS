@@ -1,0 +1,64 @@
+button {
+  border: 2px solid #6dd3f5;
+  border-radius: 13px;
+  background-color: white;
+}
+
+button:hover {
+  background-color: #e7e7e7;
+}
+
+button:active {
+  background-color: grey;
+}
+
+h3, h4 {
+  padding: 3px;
+  border: 2px solid #6dd3f5;
+  border-radius: 13px;
+  background-color: #e7e7e7;
+}
+
+main #juego {
+  background-color: white;
+  grid-area: juego;
+  min-height: 400px;
+  border: 1px solid black;
+}
+
+.pais, .ciudad {
+  color: #80b4c9;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.correcto {
+  background-color: lightgreen;
+}
+
+.draggable {
+  cursor: pointer;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "juego juego juego mapa mapa" "graf graf graf graf graf";
+}
+
+.empezarArea {
+  max-height: 50px;
+}
+
+.ciudadesArea, .paisesArea {
+  display: flex;
+  margin-left: 5px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contenedorDrop {
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px black solid;
+}/*# sourceMappingURL=juego.css.map */
